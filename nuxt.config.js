@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'poland-shop.frond',
+    title: 'Poland group products',
     htmlAttrs: {
       lang: 'en',
     },
@@ -39,10 +39,15 @@ export default {
     '@nuxtjs/axios',
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  // Axios module configuration: https://go.nuxtjs.dev/config-axios asd
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    // baseURL: 'https://jsonplaceholder.typicode.com',
+    baseURL: 'http://shop.polandgroups.pl/public/api/',
+    common: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json',
+    }
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

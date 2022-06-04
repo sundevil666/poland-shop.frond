@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto">
-    shop
+  <div>
+    index
   </div>
 </template>
 
@@ -8,6 +8,7 @@
 import Vue from 'vue'
 
 export default Vue.extend({
+  layout: 'default',
   name: 'IndexPage',
 })
 </script>
